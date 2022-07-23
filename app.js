@@ -30,11 +30,11 @@ function shiftFn(ken) {
     }
 }
 
-function input(sun) {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
-    x.value += sun ;
-    y.innerHTML += sun ;
+function input(sum) {
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
+    x.value += sum ;
+    y.innerHTML += sum ;
 }
 
 function factorial(shirious) {
