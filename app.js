@@ -1,6 +1,6 @@
 function shiftFn(ken) {
-    var shift = document.getElementById("shiftBtn") ;
-    var arr = document.getElementsByTagName("td") ;
+    let shift = document.getElementById("shiftBtn") ;
+    let arr = document.getElementsByTagName("td") ;
     if (ken == 1) {
         shift.setAttribute("onclick", "shiftFn(0)") ;
         shift.style.backgroundColor = "orange" ;
