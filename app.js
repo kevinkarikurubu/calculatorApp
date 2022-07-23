@@ -45,24 +45,24 @@ function factorial(shirious) {
 }
 
 function sqrt() {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
     x.value += "sqrt(" ;
     y.innerHTML += (/[\d)IE]/.test(y.innerHTML.slice(-1))) ? 
     " * Math.sqrt(" : "Math.sqrt(" ;
 }
 
 function leftParen() {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
     x.value += "(" ;
     y.innerHTML += (/[\d)IE]/.test(y.innerHTML.slice(-1))) ? 
     " * (" : "(" ;
 }
 
 function piOrE(lunar) {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
     if (lunar == "pi") {
         x.value += "\u03C0" ;
         y.innerHTML += (/[\d)IE]/.test(y.innerHTML.slice(-1))) ? 
@@ -75,8 +75,8 @@ function piOrE(lunar) {
 }
 
 function log(jafca) {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
     if (jafca == 1) {
         x.value += "log(" ;
         y.innerHTML += (/[\d)IE]/.test(y.innerHTML.slice(-1))) ? 
@@ -89,24 +89,24 @@ function log(jafca) {
 }
 
 function trigo(hatsyrei) {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
     x.value += hatsyrei + "(" ;
     y.innerHTML += (/[\d)IE]/.test(y.innerHTML.slice(-1))) ? 
     " * Math." + hatsyrei + "(Math.PI / 180 * " : "Math." + hatsyrei + "(Math.PI / 180 * " ;
 }
 
 function trigo1(valentin) {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
     x.value += valentin + "\u207B\u00B9("
     y.innerHTML += (/[\d)IE]/.test(y.innerHTML.slice(-1))) ? 
     " * 180 / Math.PI * Math.a" + valentin + "(" : "180 / Math.PI * Math.a" + valentin + "(" ;
 }
 
 function multOrDiv(edward) {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
     if (edward == "mult") {
         x.value += "\u00D7" ;
         y.innerHTML += "*" ;
@@ -117,9 +117,9 @@ function multOrDiv(edward) {
 }
 
 function del() {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
-    var z = document.getElementById("myAns") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
+    let z = document.getElementById("myAns") ;
     if (x.value.slice(-3) == "Ans") {
         y.innerHTML = (/[\d)IE]/.test(x.value.slice(-4, -3))) ? 
         y.innerHTML.slice(0, -(z.innerHTML.length + 3)) : y.innerHTML.slice(0, -(z.innerHTML.length)) ;
@@ -172,24 +172,24 @@ function del() {
 }
 
 function ac() {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
     x.value = y.innerHTML = "" ;
 }
 
 function ans() {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
-    var z = document.getElementById("myAns") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
+    let z = document.getElementById("myAns") ;
     x.value += "Ans" ;
     y.innerHTML += (/[\d)IE]/.test(y.innerHTML.slice(-1))) ? 
     " * " + z.innerHTML : z.innerHTML ;
 }
 
 function equal() {
-    var x = document.getElementById("result") ;
-    var y = document.getElementById("myPara") ;
-    var z = document.getElementById("myAns") ;
+    let x = document.getElementById("result") ;
+    let y = document.getElementById("myPara") ;
+    let z = document.getElementById("myAns") ;
     for (var i = 0; i < x.value.split("(").length - x.value.split(")").length; i++) {
         y.innerHTML += ")" ;
     }
