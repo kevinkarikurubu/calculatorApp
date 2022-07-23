@@ -190,7 +190,7 @@ function equal() {
     let x = document.getElementById("result") ;
     let y = document.getElementById("myPara") ;
     let z = document.getElementById("myAns") ;
-    for (var i = 0; i < x.value.split("(").length - x.value.split(")").length; i++) {
+    for ( i = 0; i < x.value.split("(").length - x.value.split(")").length; i++) {
         y.innerHTML += ")" ;
     }
     if (y.innerHTML != "") {
